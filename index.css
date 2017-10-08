@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    width: 60em;
+    max-width: 60em;
     margin: 0 auto;
     border: 1px solid #ccc;
     border-top: none;
@@ -67,7 +67,7 @@ header {
 }
 
 .brand-logo {
-    display: block;
+    /* display: block; */
     float: left;
     border-right: 1px solid #000;
     margin-right: 10px;
@@ -77,12 +77,18 @@ header {
 }
 
 .brand-profile {
-    display: block;
-    height: 100%;
+    /* display: block; */
+    /* height: 100%; */
     font-size: 20px;
     line-height: 110%;
-    width: auto;
-    float: left;
+    /* width: auto; */
+    /* float: left; */
+}
+
+.brand-profile .wrap {
+    display: table-cell;
+    height: 46px;
+    vertical-align: bottom;
 }
 
 .header-content-right {
@@ -144,13 +150,12 @@ button {
 img {
     width: 9.375em;
     min-height: 9.375em;
-    background-color: #000;
     margin: 1.875em 1.875em 1.875em 0;
     border-radius: 5px;
 }
 
 .banner-text {
-    width: 55%;
+    width: 40%;
 }
 
 .banner-text h1 {
@@ -166,19 +171,33 @@ img {
 }
 
 .banner-links {
+    width: 40%;
+    text-align: right;
     margin: 1.875em 1.875em 1.875em 0;
     font-size: 0.875em;
+}
+
+.banner-links li {
+    display: inline-block;
 }
 
 .banner-links a {
     margin-top: 0.4375em;
     margin-right: 0.4375em;
+    color: #fff;
+}
+
+.print::before {
+    content: "\f02f";
+}
+
+.email::before {
+    content: "\f003";
 }
 
 /* profile nav */
 .profile {
     margin: 0 30px;
-    min-height: 400px;
 }
 
 .profile-nav {
@@ -321,19 +340,22 @@ img {
     display: inline-block;
 }
 
-.fa-icon::before {
+.links::before {
     content: "\f0c1";
 }
 
 /* footer */
 footer {
     width: 60em;
+    height: 60px;
     margin: 0 auto;
     padding-top: 0.8em;
 }
 
 .footer-row {
-    margin-bottom: 1em;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer li {
@@ -349,4 +371,12 @@ footer li a {
 
 footer li:last-child a {
     border-right: none;
+}
+
+.footer-right {
+    background: url("./img/cap-logo.gif") transparent no-repeat top left;
+    font-size: 0.75em;
+    line-height: 1em;
+    padding-left: 5.25em;
+    padding-top: 0.3125em;
 }
