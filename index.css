@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0f4f5;
+    color: #585754;
+}
+
+main {
+    width: 60em;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* top navigation */
+
+.top-nav {
+    height: 32px;
+    background-color: #000000;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.top-nav ul {
+    float: right;
+}
+
+.top-nav ul li {
+    float: left;
+    height: 32px;
+    border-left: 1px solid #323232;
+}
+
+.top-nav ul li > a {
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #dddddd;
+    text-shadow: none;
+    line-height: 32px;
+    padding: 0 18px;
+}
+
+/* header */
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25em;
+}
+
+.header-content-left {
+    height: 45px;
+}
+
+.brand-logo {
+    display: block;
+    float: left;
+    border-right: 1px solid #000;
+    margin-right: 10px;
+    width: 177px;
+    height: 45px;
+    background: url("./img/logo_uid_stanfordmedicine.svg") no-repeat;
+}
+
+.brand-profile {
+    display: block;
+    height: 100%;
+    font-size: 20px;
+    line-height: 110%;
+    width: auto;
+    float: left;
+}
+
+.header-content-right {
+    width: 31.961%;
+    text-align: right;
+}
+
+form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 15px;
+    height: 2.26667em;
+    padding: 0.53333em 0.53333em 0.33333em;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 0.53333em;
+}
+
+button {
+    position: absolute;
+    margin: 0 1.2em 0 -1.8em;
+    height: 1.46667em;
+    width: 1.46667em;
+    border: 0;
+    border-radius: 30px;
+    right: 0;
+    background-color: #9B9B9B;
+    font-size: 0.9375em;
+    color: #fff;
+}
+
+.browse, .view-all{
+    font-size: 13px;
+    line-height: 100%;
+    padding: 0 10px;
+    color: #666;
+}
+
+.browse {
+    border-right: 1px solid #666;
+}
+
+/* banner */
+.banner {
+    background-color: #8c1515;
+    color: white;
+    padding: 0 1.125em;
+}
+
+.banner .container {
+    display: flex;
+}
+
+img {
+    width: 9.375em;
+    min-height: 9.375em;
+    background-color: #000;
+    margin: 1.875em 1.875em 1.875em 0;
+    border-radius: 5px;
+}
+
+.banner-text {
+    width: 55%;
+}
+
+.banner-text h1 {
+    font-size: 2.25em;
+    margin-top: 1.66667em;
+    font-weight: 600;
+    text-shadow: 0 0 0.35714em rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h3 {
+    font-size: 0.875em;
+    text-shadow: 0 0 0.83333em rgba(0, 0, 0, 0.5);
+}
+
+.banner-links {
+    margin: 1.875em 1.875em 1.875em 0;
+    font-size: 0.875em;
+}
+
+.banner-links a {
+    margin-top: 0.4375em;
+    margin-right: 0.4375em;
+}
+
+/* profile nav */
+.profile {
+    margin: 0 30px;
+    min-height: 400px;
+}
+
+.profile-nav {
+    min-height: 50px;
+}
+
+.profile-nav ul {
+    margin: 0.125em 0 0;
+    text-align: center;
+}
+
+.nav-li {
+    width: calc(100% / 3);
+    float: left;
+    border: 3px solid white;
+    border-radius: 0.375em;
+    background-color: #DAD8CB;
+    color: #64605D;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 200%;
+    padding-top: 0.5em;
+    padding-bottom: 0.375em;
+    margin: 0;
+}
+
+.active {
+    margin: -0.61111em 0 0.61111em;
+    padding-top: 0.77778em;
+    box-shadow: 0 -0.25em 0.125em 0 rgba(0, 0, 0, 0.125);
+    background-color: white;
+    border: none;
+    border-radius: 0.16667em;
+}
+
+.profile-a {
+    display: inline-block;
+}
+
+.active .profile-a::after {
+    background-color: #64605D;
+    border-radius: 10px;
+    content: " ";
+    display: block;
+    height: 4px;
+    margin-top: -3px;
+    width: 100%;
+}
+
+/* profile main */
+.profile-main {
+    padding-top: 2.1875em;
+}
+
+.tab-content {
+    display: flex;
+}
+
+.tab-content-left {
+    width: 65%;
+}
+
+.profile-main h2 {
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 100%;
+    margin-bottom: 0.42857em;
+}
+
+.profile-main p {
+    font-size: 0.875em;
+    line-height: 125%;
+}
+
+.tab-content div {
+    margin-bottom: 1.875em;
+}
+
+.tab-content-right {
+    width: 35%;
+}
+
+.side-box {
+    margin-left: 2.5641%;
+    background-color: #EBEDE8;
+    border-radius: 2px;
+    padding: 15px 20px;
+    margin-top: 10px;
+}
+
+.side-box h3 {
+    font-size: 1.125em;
+    font-weight: normal;
+    line-height: 100%;
+    margin-bottom: 0.42857em;
+}
+
+.side-box div {
+    margin: 10px 0 0 10px;
+}
+
+.side-box label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.side-box a {
+    color: #007c92;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 125%;
+}
+
+.side-box li {
+    margin: 0.1875em 0;
+    line-height: 200%;
+}
+
+.icon-background {
+    background-color: #007994;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 0 3px;
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    font-family: FontAwesome;
+}
+
+.fa-icon {
+    font-size: 0.5625em;
+    color: white;
+    margin: 3px auto 0;
+    vertical-align: top;
+    width: auto;
+    display: inline-block;
+}
+
+.fa-icon::before {
+    content: "\f0c1";
+}
+
+/* footer */
+footer {
+    width: 60em;
+    margin: 0 auto;
+    padding-top: 0.8em;
+}
+
+.footer-row {
+    margin-bottom: 1em;
+}
+
+footer li {
+    float: left;
+}
+
+footer li a {
+    color: #585754;
+    border-right: 1px solid #585754;
+    padding: 0 10px;
+    font-size: 0.75em;
+}
+
+footer li:last-child a {
+    border-right: none;
+}
