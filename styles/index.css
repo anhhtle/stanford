@@ -48,13 +48,16 @@ a {
 }
 
 .top-nav ul li > a {
-    display: block;
     font-size: 12px;
     font-weight: bolder;
     color: #dddddd;
-    text-shadow: none;
     line-height: 32px;
     padding: 0 18px;
+}
+
+.top-search-icon::before {
+    content: "\f002";
+    font-family: FontAwesome;
 }
 
 /* header */
@@ -77,7 +80,7 @@ header {
     margin-right: 10px;
     width: 177px;
     height: 45px;
-    background: url("./img/logo_uid_stanfordmedicine.svg") no-repeat;
+    background: url("../img/logo_uid_stanfordmedicine.svg") no-repeat;
 }
 
 .brand-profile {
@@ -385,7 +388,7 @@ footer li:last-child a {
 }
 
 .footer-right {
-    background: url("./img/cap-logo.gif") transparent no-repeat top left;
+    background: url("../img/cap-logo.gif") transparent no-repeat top left;
     font-size: 0.75em;
     line-height: 1em;
     padding-left: 5.25em;

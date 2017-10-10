@@ -1,0 +1,56 @@
+@media only screen and (max-width: 980px){
+    .top-nav {display: none;}
+
+    .nav-li {width: calc(100% / 6);}
+    
+    .header-content-right {
+        width: 300px;
+        margin-right: 40px;
+    }
+
+    /* banner */
+    .container {
+        position: relative;
+        display: initial;
+    }
+
+    .banner-text {
+        position: absolute;
+        top: 0;
+        left: 180px;
+    }    
+
+    .banner-text h1 {
+        margin: 0.9375em 0 0.17857em 0;
+    }
+
+    .banner-text h3 {
+        font-size: 15px;
+    }
+
+    .banner-links {
+        position: absolute;
+        width: initial;
+        font-size: 15px;
+        bottom: 20%;
+        left: 180px;
+    }
+
+    /* footer */
+    footer {height: 80px; position: relative;}
+
+    .footer-row {
+        display: initial;
+    }
+
+    .footer-row ul {display: inline-block}
+
+    .footer-middle {float: right}
+
+    .footer-right {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        height: 20px;
+    }
+}
