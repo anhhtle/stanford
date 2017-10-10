@@ -20,6 +20,10 @@ main {
     background-color: #fff;
 }
 
+a, nav li {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
 }
@@ -204,6 +208,10 @@ img {
     min-height: 50px;
 }
 
+.profile-nav li:not(.active):hover {
+    background-color: #efede0;
+}
+
 .profile-nav ul {
     margin: 0.125em 0 0;
     text-align: center;
@@ -231,6 +239,7 @@ img {
     background-color: white;
     border: none;
     border-radius: 0.16667em;
+    cursor: initial;
 }
 
 .profile-a {
@@ -258,6 +267,7 @@ img {
 
 .tab-content-left {
     width: 65%;
+    padding-right: 15px;
 }
 
 .profile-main h2 {
@@ -346,10 +356,11 @@ img {
 
 /* footer */
 footer {
-    width: 60em;
+    max-width: 60em;
     height: 60px;
     margin: 0 auto;
     padding-top: 0.8em;
+    padding-right: 10px;
 }
 
 .footer-row {

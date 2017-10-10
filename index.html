@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Anh Le | Stanford Mediine</title>
     <link rel="stylesheet" type="text/css" href="./reset.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <!-- font awesome -->
@@ -69,26 +70,29 @@
             <section class="profile">
                 <nav class="profile-nav">
                     <ul>
-                        <li class="nav-li thank active"><a class="profile-a">Thank you</a></li>
-                        <li class="nav-li lorem1"><a class="profile-a">Lorem</a></li>
-                        <li class="nav-li lorem2"><a class="profile-a">Lorem</a></li>
+                        <li class="nav-li active" id="thank"><a class="profile-a">Thank you</a></li>
+                        <li class="nav-li" id="lorem1"><a class="profile-a">Lorem</a></li>
+                        <li class="nav-li" id="lorem2"><a class="profile-a">Lorem 2</a></li>
                     </ul>
                 </nav>
 
                 <div class="profile-main">
                     <div class="tab-content">
                         <div class="tab-content-left">
-                            <div class="text-intro">
-                                <h2>Overview</h2>
-                                <p>asl;fdndjwoanwoefndjsnan;woeneofaowenfdksl</p>
-                            </div>
-                            <div class="text-main">
-                                <h2>Main</h2>
-                                <p>asl;fdndjwoanwoefndjsnan;woeneofaowenfdksl</p>
-                            </div>
-                            <div class="text-closing">
-                                <h2>Closing</h2>
-                                <p>asl;fdndjwoanwoefndjsnan;woeneofaowenfdksl</p>
+                            <div class="template-container">
+                                <div class="text-intro">
+                                    <h2>Overview</h2>
+                                    <p>Thank you for the opportunity to interview for this position!</p>
+                                </div>
+                                <div class="text-main">
+                                    <h2>Main</h2>
+                                    <p>I will just make this short as I hope this will illustrate my work habit and interest 
+                                       in this position. The page is built with HTML/CSS/JQuery. Hopefully I had time to make this responsive (flexbox).</p>
+                                </div>
+                                <div class="text-closing">
+                                    <h2>Closing</h2>
+                                    <p>Have a good day and I hope to hear from you soon!</p>
+                                </div>
                             </div>
                         </div>
 
@@ -97,16 +101,16 @@
                                 <h3>Contact</h3>
                                 <div>
                                     <label>Academic</label>
-                                    <a href="www.anh.ht.le@gmail.com">anh.ht.le@gmail.com</a>
+                                    <a href="mailto:anh.ht.le@gmail.com">anh.ht.le@gmail.com</a>
                                     <p>Tel: (408) 649-1365</p>
                                 </div>
                             </div>
                             <div class="side-box">
                                 <h3>Links</h3>
                                 <ul>
-                                    <li><span class="icon-background"><i class="fa-icon links"></i></span><a href="linkedin.com/in/anh-ht-le/">Linkedin</a></li>
-                                    <li><span class="icon-background"><i class="fa-icon links"></i></span><a href="github.com/anhhtle">GitHub</a></li>
-                                    <li><span class="icon-background"><i class="fa-icon links"></i></span><a href="anhhtle.github.io/portfolio/">Porfolio</a></li>
+                                    <li><span class="icon-background"><i class="fa-icon links"></i></span><a href="https://linkedin.com/in/anh-ht-le/" target="_blank">Linkedin</a></li>
+                                    <li><span class="icon-background"><i class="fa-icon links"></i></span><a href="https://github.com/anhhtle" target="_blank">GitHub</a></li>
+                                    <li><span class="icon-background"><i class="fa-icon links"></i></span><a href="https://anhhtle.github.io/portfolio/" target="_blank">Porfolio</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -114,8 +118,7 @@
                 </div>
             </section>          
         </div>
-
-        
+      
     </main>
     
     <footer>
@@ -133,6 +136,13 @@
             <div class="footer-right">POWERED BY CAP NETWORK</div>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 
 </body>
 
