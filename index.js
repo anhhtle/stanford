@@ -62,7 +62,8 @@ let changeTabContent = (newID) => {
         $('.tab-content-left').html(template3);
 };
 
-$('.nav-li').on('click', function(){
+$('.nav-li').on('click', function(e){
+    e.stopPropagation();
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
 
