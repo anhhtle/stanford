@@ -92,6 +92,9 @@
     .banner-links {
         font-size: 12px;
         bottom: 7%;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
     }
 
     .banner-links li {
@@ -122,4 +125,8 @@
 
     .footer-left, .footer-middle {display: none;}
 
+}
+
+@media only screen and (max-width: 450px){
+    .banner-links {margin-bottom: 10px;}
 }
