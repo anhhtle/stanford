@@ -10,6 +10,17 @@
     <link rel="stylesheet" type="text/css" href="./styles/responsive.css">
     <meta name="description" content="Mock stanford staff profile page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106848019-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106848019-2');
+    </script>
+
 </head>
 
 <body>
@@ -33,6 +44,9 @@
                 </div>
 
                 <div class="header-content-right">
+                    <span id="mobile-sidebar-trigger">
+                        <a><i class="icon"></i></a>
+                    </span>
                     <form>
                         <input type="text" placeholder="Search by name or topic...">
                         <button>S</button>
@@ -68,6 +82,12 @@
             </section>
 
             <section class="profile">
+                <nav class="mobile-profile-nav">
+                    <a>
+                        <span>Thank you</span>
+                        <i class="icon-down-arrow"></i>
+                    </a>
+                </nav>
                 <nav class="profile-nav">
                     <ul>
                         <li class="nav-li active" id="thank"><a class="profile-a">Thank you</a></li>
